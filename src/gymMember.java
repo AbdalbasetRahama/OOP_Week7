@@ -1,3 +1,4 @@
+
 public class gymMember {
     private final String memberId;
     private final String name;
@@ -25,4 +26,14 @@ public class gymMember {
         this.age = age;
     }
 
+        public String getMemberId () {return memberId;}
+        public String getName(){return name;}
+        public int getAge() {return age;}
+
+
+    public void displayDetails() {
+        getMemberId ();
+        getName ();
+        getAge();
+    }
 }
