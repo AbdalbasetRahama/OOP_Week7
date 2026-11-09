@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        List<gymMember> members = new ArrayList<gymMember>();
+        ArrayList<gymMember> members = new ArrayList<>();
 
         for(gymMember member : members) {
-            members.add(member);
+            members.add(new gymMember);
         }
 
 

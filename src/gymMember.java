@@ -31,9 +31,4 @@ public class gymMember {
         public int getAge() {return age;}
 
 
-    public void displayDetails() {
-        getMemberId ();
-        getName ();
-        getAge();
-    }
 }
