@@ -7,7 +7,7 @@ public class Main {
         ArrayList<gymMember> members = new ArrayList<>();
 
         for(gymMember member : members) {
-            members.add(new gymMember("12if", "Ali", 21));
+            members.add(new gymMember("12if", "Al", 21));
         }
 
 
