@@ -3,25 +3,26 @@
 ## 1. My Original Examination Grade
 
 ### Task 1 — /40
-**My mark:** 25
+**My mark:**
+25 
 
-**Why I awarded this mark:** A declaration for private fields (memberId, name and age) declared correctly.
- A constructor to initialise the variables is correct.
-A getter method has been coded correctly.
+**Why I awarded this mark:**
+The declaration for private fields and the constructor have been initialised.
+The getter has been created.
 
 ### Task 2 — /40
-**My mark:** 0
-
-**Why I awarded this mark:** No ArrayList Membership management created.
+**My mark:**
+0 mark
+**Why I awarded this mark:**
+Nothing has been done here.
 
 ### Task 3 — /20
-**My mark:** 2.5 
+**My mark:**
+2.5
 
-**Why I awarded this mark:**  only a rejection for entering zero age implemented inside the constructor
-
+**Why I awarded this mark:**
+Only rejection for adding zero age has been created
 **Total self-assessed grade:** 27.5/100
-
-## 2. Corrections and Improvements
 
 Describe two or three important problems you identified
 in your original code. Explain what you changed and
@@ -31,8 +32,8 @@ why it works now.
 
 **What did you understand during the examination
 but struggle to implement?**
-when I tried to create the scanner to read from the values I remembered how to do it but I was still confused because I did not get any message to prompt the user to enter the values. 
-
+I understood adding the display method but was not sure in which class exactly has to be added.
+vcvcx
 **What was the most important thing you learned
 from correcting your code?**
 
