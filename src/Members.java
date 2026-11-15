@@ -13,7 +13,6 @@ public class Members {
     public void displayAllMembers() {
         if (members.isEmpty()) {
             System.out.println("Member not found");
-            return;
         }
 
             for (Member member : members) {

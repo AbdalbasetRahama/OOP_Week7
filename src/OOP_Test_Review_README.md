@@ -21,25 +21,40 @@ Nothing has been done here.
 2.5
 
 **Why I awarded this mark:**
-Only rejection for adding zero age has been created
+Only rejection for adding zero age has been created.
+
 **Total self-assessed grade:** 27.5/100
 
 Describe two or three important problems you identified
 in your original code. Explain what you changed and
 why it works now.
+* For displayDetails() method I did not use the getter to display the data and after call each getter 
+  inside it the method is able to print the member detail.
+
+* I do not know how to create methods for adding members and displayAllDetails,
+  but now I understand how to add by creating a method and add to the list by each reference in the class 
+  and then displaying all the details using display method and enhanced loop to iterate through
+  the collection to display each individual object.
+
+* use try{} catch{} to handle errors, so I am able to print a message if a member by ID not found
 
 ## 3. Reflection
 
 **What did you understand during the examination
 but struggle to implement?**
 I understood adding the display method but was not sure in which class exactly has to be added.
-vcvcx
+
 **What was the most important thing you learned
 from correcting your code?**
+The importance of handling errors and how this can effect 
+the data to printed in console sometimes as the menu in this case
+will not be repeated and shows error at the end.
 
 **What would you do differently in your next
 coding test?**
 
+I found i easy to structure the classes in three classes to i am able to 
+handle the methods except the constructor, the getter and display methods. 
 ---
 
 ## Review lab assessment and mark recovery

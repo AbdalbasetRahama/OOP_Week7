@@ -9,9 +9,6 @@ public class Main {
 
        Members members = new Members();
 
-
-        Scanner menu = new Scanner(System.in);
-
         int choice = 0;
         while (choice != 5) {
 
@@ -22,8 +19,9 @@ public class Main {
             System.out.println("4. Remove Member");
             System.out.println("5. Exit");
 
-            System.out.println("Enter choice: ");
+            Scanner menu = new Scanner(System.in);
 
+            System.out.println("Enter choice: ");
             try {
                 choice = Integer.parseInt(menu.nextLine());
             } catch (NumberFormatException e) {
@@ -31,19 +29,19 @@ public class Main {
             }
              if (choice == 1) {
 
-                 Scanner member1 = new Scanner(System.in);
+                 Scanner member = new Scanner(System.in);
 
                  System.out.println("Enter a member ID: ");
-                 String memberId = member1.nextLine();
+                 String memberId = member.nextLine();
 
                  System.out.println("Enter name: ");
-                 String name = member1.nextLine();
+                 String name = member.nextLine();
 
                  System.out.println("Enter age: ");
-                 int age = member1.nextInt();
+                 int age = member.nextInt();
 
-                 Member member = new Member(memberId, name, age);
-                 members.addMember(member);
+                 Member member1 = new Member(memberId, name, age);
+                 members.addMember(member1);
 
                  System.out.println("Member added successfully");
              }
@@ -57,11 +55,11 @@ public class Main {
                  String memberId = menu.nextLine();
 
                  Member found = members.findMemberById(memberId);
-                 if (found == null) {
-                     System.out.println("Member not found");
+                 if (found != null) {
+                     found.displayDetails();
                  }
                  else {
-                 found.displayDetails();
+                     System.out.println("Member not found");
                  }
 
              }
@@ -84,9 +82,6 @@ public class Main {
 
             }
 
-            else  {
-                System.out.println("Invalid choice");
-            }
         }
     }
 }
