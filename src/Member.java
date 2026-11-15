@@ -1,11 +1,9 @@
-import java.util.ArrayList;
-import java.util.List;
 
 public class Member {
-    private final String memberId;
-    private final String name;
-    private final int age;
-    List<Member> members = new ArrayList<Member>();
+    private String memberId;
+    private  String name;
+    private  int age;
+
 
 
     public Member(String memberId, String name, int age)
@@ -41,35 +39,5 @@ public class Member {
         System.out.println("Name: " + getName());
         System.out.println("Age: " + getAge());
     }
-
-
-    public void addMember(Member member) {
-        if (member == null) {
-            throw new IllegalArgumentException("member cannot be null");
-        }
-        members.add(member);
-    }
-    public List<Member> dispalyAllMembers() {
-        return new ArrayList<>(members);}
-
-    public Member findMemberById(String memberId) {
-        for (Member member : members) {
-            if (member.getMemberId().equals(memberId)) {
-                return member;
-            }
-        }
-        return null;
-    }
-    public boolean removeMember(String memberId) {
-
-        Member member = findMemberById(memberId);
-        if (member == null) {
-            return false;
-        }
-
-        members.remove(member);
-        return true;
-    }
-
 
 }
